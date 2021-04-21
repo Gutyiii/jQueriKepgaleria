@@ -86,8 +86,9 @@ function kepValtasJobbra(){
 }
 
 function megjelenes(x) {
+    $("#nagykepTarolo img").fadeIn("slow");
     $("#nagykepTarolo img").attr("src",kepTomb[x].eleresiut);
-    $("#nagykepTarolo img").fadeToggle(3000);
+    $("#nagykepTarolo img").fadeIn("slow");
     $("#nagykepTarolo h3").eq(0).html(kepTomb[x].cim);
     $("#nagykepTarolo p").eq(0).html(kepTomb[x].leiras);
 }
